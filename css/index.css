@@ -59,7 +59,6 @@ body {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,8 +97,18 @@ body {
     height: 20px;
 }
 
+.card-tag-container {
+    margin: 10px;
+}
+
 .tag-container {
     margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.tag-container label {
+    margin-top: 2px;
 }
 
 .tag {

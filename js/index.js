@@ -100,7 +100,7 @@ function createCards(pageNumber, itemsToShow) {
         tagsDiv.classList.add("card-content-div");
         content.appendChild(tagsDiv);
         const tags = document.createElement("div");
-        tags.classList.add("tag-container");
+        tags.classList.add("card-tag-container");
         item.tags.forEach(tag => {
             const tagElement = document.createElement("span");
             tagElement.classList.add("tag");
@@ -134,6 +134,9 @@ function createCards(pageNumber, itemsToShow) {
 }
 
 function createPaginationButtons() {
+    if (totalPages == 1) {
+        return
+    }
     const paginationContainer = document.getElementById("pagination");
     paginationContainer.innerHTML = "";
     for (let i = 1; i <= totalPages; i++) {
