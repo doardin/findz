@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findz - Sua fonte de achados CSSBuy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-text {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 50%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img-container {
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .card-content {
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .card-content p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        .card-content-div {
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .card-content-tags {
+            height: 20px;
+        }
+
+        .tag-container {
+            margin: 10px;
+        }
+
+        .tag {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 3px 6px;
+            margin-right: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .tag:hover {
+            background-color: #ccc;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .button-container button {
+            flex: 1;
+            margin-right: 5px;
+            height: 32px;
+
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 24px;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .search-bar input {
+                width: 100%;
+            }
+
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .card {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header-text">
+            <div>Findz</div>
+            <div>Seu site de achados CSS Buy</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+        </div>
+
+        <div class="tag-container" id="tagContainer">
+            
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card-container" id="cardContainer">
+            
+        </div>
+    </div>
+
+
+    <div class="pagination" id="pagination">
+        
+    </div>
+
+    <script>
+        async function fetchJSONFile(path) {
+            const response = await fetch(path);
+            const data = await response.json();
+            return data;
+        }
+
+        function createCards(pageNumber, itemsToShow) {
+            const container = document.getElementById("cardContainer");
+            container.innerHTML = "";
+            itemsToShow.forEach(item => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+
+                const imgContainer = document.createElement("div");
+                imgContainer.classList.add("img-container");
+
+                const img = document.createElement("img");
+                img.src = item.image;
+                imgContainer.appendChild(img);
+
+                card.appendChild(imgContainer);
+
+                const content = document.createElement("div");
+                content.classList.add("card-content");
+
+                const nameDiv = document.createElement("div");
+                nameDiv.classList.add("card-content-div");
+                content.appendChild(nameDiv);
+                const name = document.createElement("p");
+                name.textContent = item.name;
+                nameDiv.appendChild(name);
+
+
+
+                const descriptionDiv = document.createElement("div");
+                descriptionDiv.classList.add("card-content-div");
+                content.appendChild(descriptionDiv);
+                const description = document.createElement("p");
+                description.textContent = item.description;
+                descriptionDiv.appendChild(description);
+                content.appendChild(descriptionDiv);
+
+
+                const valueDiv = document.createElement("div");
+                valueDiv.classList.add("card-content-div");
+                content.appendChild(valueDiv);
+
+                const value = document.createElement("p");
+                value.textContent = "Valor: ¥" + item.value;
+                valueDiv.appendChild(value);
+                content.appendChild(valueDiv);
+
+                const tagsDiv = document.createElement("div");
+                tagsDiv.classList.add("card-content-div");
+                content.appendChild(tagsDiv);
+                const tags = document.createElement("div");
+                tags.classList.add("tag-container");
+                item.tags.forEach(tag => {
+                    const tagElement = document.createElement("span");
+                    tagElement.classList.add("tag");
+                    tagElement.textContent = tag;
+                    tagElement.addEventListener("click", () => {
+                        filterByTag(tag);
+                    });
+                    tags.appendChild(tagElement);
+                });
+                tagsDiv.appendChild(tags);
+                content.appendChild(tagsDiv);
+                card.appendChild(content);
+
+                
+                const buttonContainer = document.createElement("div");
+                buttonContainer.classList.add("button-container");
+
+                
+                const cssBuyButton = document.createElement("button");
+                cssBuyButton.textContent = "Ir para CSSBuy";
+                cssBuyButton.addEventListener("click", () => {
+                    window.open(item.cssBuyLink, "_blank"); 
+                });
+                buttonContainer.appendChild(cssBuyButton);
+
+                
+                card.appendChild(buttonContainer);
+
+                container.appendChild(card);
+            });
+        }
+
+        function createPaginationButtons() {
+            const paginationContainer = document.getElementById("pagination");
+            paginationContainer.innerHTML = "";
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement("button");
+                button.textContent = i;
+                button.addEventListener("click", () => {
+                    currentPage = i;
+                    if (searchInput.value === "") {
+                        const startIndex = (currentPage - 1) * itemsPerPage;
+                        const endIndex = currentPage * itemsPerPage;
+                        const itemsToShow = items.slice(startIndex, endIndex);
+                        createCards(currentPage, itemsToShow);
+                    } else {
+                        search();
+                    }
+                });
+                paginationContainer.appendChild(button);
+            }
+        }
+
+        function filterByTag(tag) {
+            const filteredItems = items.filter(item => item.tags.includes(tag));
+            const container = document.getElementById("cardContainer");
+            container.innerHTML = "";
+            const totalFilteredPages = Math.ceil(filteredItems.length / itemsPerPage);
+            totalPages = totalFilteredPages > 0 ? totalFilteredPages : 1;
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = currentPage * itemsPerPage;
+            const itemsToShow = filteredItems.slice(startIndex, endIndex);
+            createCards(currentPage, itemsToShow);
+            createPaginationButtons();
+        }
+
+        function search() {
+            const searchInput = document.getElementById("searchInput").value.toLowerCase();
+            const filteredItems = items.filter(item => item.name.toLowerCase().includes(searchInput));
+            const container = document.getElementById("cardContainer");
+            container.innerHTML = "";
+            const totalFilteredPages = Math.ceil(filteredItems.length / itemsPerPage);
+            totalPages = totalFilteredPages > 0 ? totalFilteredPages : 1;
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = currentPage * itemsPerPage;
+            const itemsToShow = filteredItems.slice(startIndex, endIndex);
+            createCards(currentPage, itemsToShow);
+            createPaginationButtons();
+        }
+
+        function createTags() {
+            const tags = new Set();
+            items.forEach(item => {
+                item.tags.forEach(tag => {
+                    tags.add(tag);
+                });
+            });
+            const tagContainer = document.getElementById("tagContainer");
+            tags.forEach(tag => {
+                const tagElement = document.createElement("span");
+                tagElement.classList.add("tag");
+                tagElement.textContent = tag;
+                tagElement.addEventListener("click", () => {
+                    filterByTag(tag);
+                });
+                tagContainer.appendChild(tagElement);
+            });
+        }
+
+        let items;
+        const itemsPerPage = 14;
+        let currentPage = 1;
+        let totalPages = 1;
+
+        fetchJSONFile('http://demo0957209.mockable.io/items')
+            .then(data => {
+                items = data;
+                totalPages = Math.ceil(items.length / itemsPerPage);
+                createTags();
+                createCards(currentPage, items.slice(0, itemsPerPage));
+                createPaginationButtons();
+            })
+            .catch(error => {
+                console.error('Erro ao carregar o arquivo JSON:', error);
+            });
+
+        const searchInput = document.getElementById("searchInput");
+        searchInput.addEventListener("input", search);
+    </script>
+
+</body>
+
+</html>

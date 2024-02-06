@@ -1,0 +1,124 @@
+[
+    {
+        "name": "FK Air Jordan 1 (AJ1)",
+        "image": "https://cdn.awsli.com.br/1832/1832657/produto/166345337/b27b70d760.jpg",
+        "description": "Variedades de Jordans 1",
+        "tags": [
+            "Nike",
+            "Shoes"
+        ],
+        "value": 330,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-5718478504.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Camiseta Stussy Dragon",
+        "image": "https://www.flowhigh.com.br/cdn/shop/files/dragon3_800x.jpg?v=1686183415",
+        "description": "",
+        "tags": [
+            "Stussy",
+            "T-Shirts"
+        ],
+        "value": 76,
+        "cssBuyLink": "https://www.cssbuy.com/item-693599451831.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Shorts Stussy",
+        "image": "https://stashedsf.com/cdn/shop/products/69f5461f31a04eef76bf8a056f53d983_1000x1000.jpg?v=1692288537",
+        "description": "",
+        "tags": [
+            "Stussy",
+            "Shorts"
+        ],
+        "value": 71.25,
+        "cssBuyLink": "https://www.cssbuy.com/item-736036698297.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Anel Pandora Coração Cintilante",
+        "image": "https://waynejoias.com.br/cdn/shop/products/AnelCoracaoVermelhoCintilante_1600x.jpg?v=1673876966",
+        "description": "",
+        "tags": [
+            "Pandora",
+            "Rings"
+        ],
+        "value": 10,
+        "cssBuyLink": "https://www.cssbuy.com/item-1688-739965589204.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "LW Yeezy Foam Runner",
+        "image": "https://cdn-images.farfetch-contents.com/18/54/99/39/18549939_43724221_600.jpg",
+        "description": "",
+        "tags": [
+            "Adidas",
+            "Yeezy"
+        ],
+        "value": 60,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-4399149310.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "LW Yeezy Slide",
+        "image": "https://media.sivasdescalzo.com/media/catalog/product/I/D/ID4132_sivasdescalzo-adidas_YEEZY-YEEZY_SLIDE-1691399923-2.jpg?quality=70&auto=webp&fit=bounds&width=420",
+        "description": "",
+        "tags": [
+            "Adidas",
+            "Yeezy"
+        ],
+        "value": 60,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-5440497346.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Meias Air Jordan 1 (AJ1)",
+        "image": "https://m.media-amazon.com/images/I/61qjrA7Ty-L._AC_UY1100_.jpg",
+        "description": "",
+        "tags": [
+            "Nike",
+            "Socks"
+        ],
+        "value": 60,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-5440497346.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Meias Essentials FOG (Fear Of God)",
+        "image": "https://i.etsystatic.com/22980671/r/il/55a5cc/4725121551/il_fullxfull.4725121551_36gn.jpg",
+        "description": "",
+        "tags": [
+            "Essentials",
+            "Socks"
+        ],
+        "value": 3,
+        "cssBuyLink": "https://www.cssbuy.com/item-1688-652660731492.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Conjunto Shorts Syna World",
+        "image": "https://6ixcompany.com.br/cdn/shop/files/Sem-Titulo-1_298c61a0-6ac1-4ef7-8dac-31d0a2e2ec30_800x.jpg?v=1691187213",
+        "description": "",
+        "tags": [
+            "Syna",
+            "Tracksuits"
+        ],
+        "value": 130,
+        "cssBuyLink": "https://www.cssbuy.com/item-765985400328.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Camisetas Palm Angels",
+        "image": "https://cdn.discordapp.com/attachments/1204225488319553646/1204225488503967795/IMG_5879.jpg",
+        "description": "",
+        "tags": [
+            "Palm Angels",
+            "T-Shirts"
+        ],
+        "value": 47,
+        "cssBuyLink": "https://www.cssbuy.com/item-1688-758243790513.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Suéter Nike x Stussy",
+        "image": "https://cdn.discordapp.com/attachments/1203710937874305104/1203710938398851213/IMG_5836.jpg",
+        "description": "",
+        "tags": [
+            "Nike",
+            "Stussy",
+            "Sweaters"
+        ],
+        "value": 140,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6116360614.html?promotionCode=09ce95dd5c32435f"
+    }
+]
