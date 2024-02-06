@@ -189,7 +189,7 @@ const itemsPerPage = 14;
 let currentPage = 1;
 let totalPages = 1;
 
-fetchJSONFile('https://findz.s3.sa-east-1.amazonaws.com/data.json')
+fetchJSONFile('https://raw.githubusercontent.com/doardin/findz/master/data.json')
     .then(data => {
         items = data;
         totalPages = Math.ceil(items.length / itemsPerPage);
