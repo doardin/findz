@@ -17,7 +17,7 @@ function createCards(data) {
         const card = document.createElement('div');
         card.className = "card";
 
-        const tagsHTML = item.tags.map(tag => `<a href="#" class="badge badge-secondary">${tag}</a>`).join('\n');
+        const tagsHTML = item.tags.map(tag => `<a href="#" class="badge badge-success">${tag}</a>`).join('\n');
 
         card.innerHTML = `
             <div class="card-img">
@@ -42,26 +42,47 @@ function createCards(data) {
 }
 
 function createPaginationButtons() {
+    const paginationContainer = document.getElementById("pagination-buttons");
+    paginationContainer.innerHTML = "";
+
     if (totalPages == 1) {
         return
     }
-    const paginationContainer = document.getElementById("pagination-buttons");
+
     for (let i = 1; i <= totalPages; i++) {
         const pagination = document.createElement('li');
         pagination.className = 'page-item';
 
         pagination.addEventListener("click", () => {
             currentPage = i;
-            const startIndex = (currentPage - 1) * itemsPerPage;
-            const endIndex = currentPage * itemsPerPage;
-            const itemsToShow = items.slice(startIndex, endIndex);
-            createCards(itemsToShow);
+            if (searchInput.value === "") {
+                const startIndex = (currentPage - 1) * itemsPerPage;
+                const endIndex = currentPage * itemsPerPage;
+                const itemsToShow = items.slice(startIndex, endIndex);
+                createCards(itemsToShow);
+            } else {
+                search();
+            }
         });
-        button.innerHTML = `
-            <li class="page-item"><a class="page-link" href="#">${i}</a></li>
+        pagination.innerHTML = `
+            <a class="page-link" href="#">${i}</a>
         `;
         paginationContainer.appendChild(pagination);
     }
+}
+
+function search() {
+    const searchInput = document.getElementById("search").value.toLowerCase();
+    const filteredItems = items.filter(item => item.name.toLowerCase().includes(searchInput));
+    const container = document.getElementById("cards-container");
+    container.innerHTML = "";
+    const totalFilteredPages = Math.ceil(filteredItems.length / itemsPerPage);
+    totalPages = totalFilteredPages > 0 ? totalFilteredPages : 1;
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = currentPage * itemsPerPage;
+    const itemsToShow = filteredItems.slice(startIndex, endIndex);
+    createCards(itemsToShow);
+    createPaginationButtons();
 }
 
 fetchData('https://raw.githubusercontent.com/doardin/findz/master/data.json')
@@ -74,3 +95,6 @@ fetchData('https://raw.githubusercontent.com/doardin/findz/master/data.json')
     .catch(error => {
         console.error('Erro ao carregar o arquivo JSON:', error);
     });
+
+const searchInput = document.getElementById("search");
+searchInput.addEventListener("input", search);

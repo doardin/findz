@@ -10,7 +10,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cards.css"">
 
-    <title>Hello, world!</title>
+    <title>Findz - Sua fonte de achados CSSBuy</title>
     <style>
         body {
             font-family: 'Roboto'
@@ -20,14 +20,30 @@
 
 <body>
     <div class=" container">
+    <div class="header-text">
+        <h1>Findz</h1>
+        <h2>Sua fonte de achados CSSBuy</h2>
+    </div>
+    <div class="search-bar">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="search" placeholder="O que deseja encontrar?" aria-label=""
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-success" type="button">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+
     <div id="cards-container" class="cards-container">
     </div>
+
     <div class="pagination-buttons">
         <nav>
-            <ul id="pagination-buttons" class="pagination">
+            <ul id="pagination-buttons" class="pagination pagination-sm">
             </ul>
         </nav>
     </div>
+
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

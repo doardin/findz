@@ -33,3 +33,11 @@
     display: flex;
     justify-content: center;
 }
+
+.header-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
