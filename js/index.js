@@ -112,7 +112,7 @@ function createCards(pageNumber, itemsToShow) {
         });
         tagsDiv.appendChild(tags);
         content.appendChild(tagsDiv);
-        card.appendChild(content);
+
 
 
         const buttonContainer = document.createElement("div");
@@ -125,9 +125,9 @@ function createCards(pageNumber, itemsToShow) {
             window.open(item.cssBuyLink, "_blank");
         });
         buttonContainer.appendChild(cssBuyButton);
+        content.appendChild(buttonContainer)
 
-
-        card.appendChild(buttonContainer);
+        card.appendChild(content);
 
         container.appendChild(card);
     });
