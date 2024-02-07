@@ -72,9 +72,8 @@ function createPaginationButtons() {
 }
 
 function search() {
-    const searchInput = replaceSpecialChars(document.getElementById("search").value.toLowerCase());
-
-    const filteredItems = items.filter(item => replaceSpecialChars(item.name.toLowerCase()).includes(searchInput));
+    const searchInput = document.getElementById("search").value.toLowerCase();
+    const filteredItems = items.filter(item => item.name.toLowerCase().includes(searchInput));
     const container = document.getElementById("cards-container");
     container.innerHTML = "";
     const totalFilteredPages = Math.ceil(filteredItems.length / itemsPerPage);
@@ -86,17 +85,7 @@ function search() {
     createPaginationButtons();
 }
 
-function replaceSpecialChars(str) {
-    str = str.replace(/[ÀÁÂÃÄÅ]/, "A");
-    str = str.replace(/[àáâãäå]/, "a");
-    str = str.replace(/[ÈÉÊË]/, "E");
-    str = str.replace(/[Ç]/, "C");
-    str = str.replace(/[ç]/, "c");
-
-    return str.replace(/[^a-z0-9]/gi, '');
-}
-
-fetchData('https://raw.githubusercontent.com/doardin/findz/master/data.json')
+fetchData('https://findz.s3.sa-east-1.amazonaws.com/data.json')
     .then(data => {
         items = data;
         totalPages = Math.ceil(items.length / itemsPerPage);

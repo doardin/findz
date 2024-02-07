@@ -1,0 +1,112 @@
+[
+    {
+        "name": "(VT Batch) Nike Dunk Low",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/dunk_low.webp",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 169,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6474774404.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(LW B Batch) Yeezy Slide",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/yeezy_slide.webp",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 45,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6046581904&a.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(GX Batch) Nike Air Jordan 4",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/aj4.jpg",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 450,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6046485866&a.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(SY Batch) Nike Dunk Low SB Jedi",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/dunk_low_sb_jedi.jpg",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 590,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6316049528.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(VT Batch) Nike Air Jordan 4",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/aj4.jpg",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 199,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6380800401.html?promotionCode=3d8de1188ad2926a"
+    },
+    {
+        "name": "(TOP/S2 Batch) Nike Dunk Low Heineken",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/dunk_low_heineiken.webp",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 310,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6383034706.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(TOP/S2 Batch) Nike Dunk Low x Off White",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/dunk_low_off_white.jpg",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 350,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6385000338.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(CK Batch) Nike Air Max 97",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/air_max_97.webp",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 190,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6230513769.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(PZ Batch) New Balance 550",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/new_balance_550.webp",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 170,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-4713146428.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(AY Batch) Nike Dunk Lobster",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/dunk_lobster.png",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 270,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6249681526.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "(AY Batch) Nike Dunk Lobster",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shoes/dunk_lobster.png",
+        "description": "",
+        "tags": [
+            "Shoes"
+        ],
+        "value": 270,
+        "cssBuyLink": "https://www.cssbuy.com/item-micro-6249681526.html?promotionCode=09ce95dd5c32435f"
+    }
+]
