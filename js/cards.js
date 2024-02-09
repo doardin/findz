@@ -43,9 +43,6 @@ function createCards(data) {
 
 
 function showHiddenPaginationButtons() {
-    console.log("Current page: " + currentPage);
-    console.log("Total pages: " + totalPages);
-
     const previousButton = document.getElementById("pg-previous-page");
     previousButton.classList.add("hidden");
 
