@@ -30,8 +30,23 @@
 
 .pagination-buttons {
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    width: 100%;
+}
+
+.pagination-buttons button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    width: 19px;
+    height: 18px;
+}
+
+.hidden {
+    display: none;
 }
 
 .header-text {

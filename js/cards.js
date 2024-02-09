@@ -41,34 +41,47 @@ function createCards(data) {
     });
 }
 
-function createPaginationButtons() {
-    const paginationContainer = document.getElementById("pagination-buttons");
-    paginationContainer.innerHTML = "";
 
-    if (totalPages == 1) {
-        return
+function showHiddenPaginationButtons() {
+    console.log("Current page: " + currentPage);
+    console.log("Total pages: " + totalPages);
+
+    const previousButton = document.getElementById("pg-previous-page");
+    previousButton.classList.add("hidden");
+
+    const nextButton = document.getElementById("pg-next-page");
+    nextButton.classList.add("hidden");
+
+    previousButton.removeEventListener("click", previousButtonClickHandler);
+    nextButton.removeEventListener("click", nextButtonClickHandler);
+
+    if (totalPages > 1 && currentPage < totalPages) {
+        nextButton.classList.remove("hidden");
+        nextButton.addEventListener("click", nextButtonClickHandler);
     }
 
-    for (let i = 1; i <= totalPages; i++) {
-        const pagination = document.createElement('li');
-        pagination.className = 'page-item';
-
-        pagination.addEventListener("click", () => {
-            currentPage = i;
-            if (searchInput.value === "") {
-                const startIndex = (currentPage - 1) * itemsPerPage;
-                const endIndex = currentPage * itemsPerPage;
-                const itemsToShow = items.slice(startIndex, endIndex);
-                createCards(itemsToShow);
-            } else {
-                search();
-            }
-        });
-        pagination.innerHTML = `
-            <a class="page-link" href="#">${i}</a>
-        `;
-        paginationContainer.appendChild(pagination);
+    if (currentPage > 1) {
+        previousButton.classList.remove("hidden");
+        previousButton.addEventListener("click", previousButtonClickHandler);
     }
+}
+
+function previousButtonClickHandler() {
+    currentPage -= 1;
+    const endIndex = currentPage * itemsPerPage;
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const itemsToShow = items.slice(startIndex, endIndex);
+    createCards(itemsToShow);
+    showHiddenPaginationButtons();
+}
+
+function nextButtonClickHandler() {
+    currentPage += 1;
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = currentPage * itemsPerPage;
+    const itemsToShow = items.slice(startIndex, endIndex);
+    createCards(itemsToShow);
+    showHiddenPaginationButtons();
 }
 
 function search() {
@@ -82,7 +95,7 @@ function search() {
     const endIndex = currentPage * itemsPerPage;
     const itemsToShow = filteredItems.slice(startIndex, endIndex);
     createCards(itemsToShow);
-    createPaginationButtons();
+    showHiddenPaginationButtons();
 }
 
 fetchData('https://findz.s3.sa-east-1.amazonaws.com/data.json')
@@ -90,7 +103,7 @@ fetchData('https://findz.s3.sa-east-1.amazonaws.com/data.json')
         items = data;
         totalPages = Math.ceil(items.length / itemsPerPage);
         createCards(items.slice(0, itemsPerPage));
-        createPaginationButtons();
+        showHiddenPaginationButtons();
     })
     .catch(error => {
         console.error('Erro ao carregar o arquivo JSON:', error);
