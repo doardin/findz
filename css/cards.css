@@ -18,6 +18,8 @@
 }
 
 .card-img-top {
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
     height: 200px;
     object-fit: contain;
@@ -31,8 +33,8 @@
 .pagination-buttons {
     margin-top: 10px;
     margin-bottom: 10px;
-    display: grid;
-    align-items: center;
+    align-items: flex-end;
+    display: flex;
     width: 100%;
 }
 
@@ -41,12 +43,14 @@
     background-color: transparent;
     outline: none;
     cursor: pointer;
-    width: 19px;
     height: 18px;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .header-text {
