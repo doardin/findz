@@ -6,8 +6,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 169,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6474774404.html?promotionCode=09ce95dd5c32435f"
+        "price": 169,
+        "link": "https://www.cssbuy.com/item-micro-6474774404.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(LW B Batch) Yeezy Slide",
@@ -16,8 +16,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 45,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6046581904&a.html?promotionCode=09ce95dd5c32435f"
+        "price": 45,
+        "link": "https://www.cssbuy.com/item-micro-6046581904&a.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(GX Batch) Nike Air Jordan 4",
@@ -26,8 +26,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 450,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6046485866&a.html?promotionCode=09ce95dd5c32435f"
+        "price": 450,
+        "link": "https://www.cssbuy.com/item-micro-6046485866&a.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(SY Batch) Nike Dunk Low SB Jedi",
@@ -36,8 +36,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 590,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6316049528.html?promotionCode=09ce95dd5c32435f"
+        "price": 590,
+        "link": "https://www.cssbuy.com/item-micro-6316049528.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(VT Batch) Nike Air Jordan 4",
@@ -46,8 +46,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 199,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6380800401.html?promotionCode=3d8de1188ad2926a"
+        "price": 199,
+        "link": "https://www.cssbuy.com/item-micro-6380800401.html?promotionCode=3d8de1188ad2926a"
     },
     {
         "name": "(TOP/S2 Batch) Nike Dunk Low Heineken",
@@ -56,8 +56,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 310,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6383034706.html?promotionCode=09ce95dd5c32435f"
+        "price": 310,
+        "link": "https://www.cssbuy.com/item-micro-6383034706.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(TOP/S2 Batch) Nike Dunk Low x Off White",
@@ -66,8 +66,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 350,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6385000338.html?promotionCode=09ce95dd5c32435f"
+        "price": 350,
+        "link": "https://www.cssbuy.com/item-micro-6385000338.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(CK Batch) Nike Air Max 97",
@@ -76,8 +76,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 190,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6230513769.html?promotionCode=09ce95dd5c32435f"
+        "price": 190,
+        "link": "https://www.cssbuy.com/item-micro-6230513769.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(PZ Batch) New Balance 550",
@@ -86,8 +86,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 170,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-4713146428.html?promotionCode=09ce95dd5c32435f"
+        "price": 170,
+        "link": "https://www.cssbuy.com/item-micro-4713146428.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(AY Batch) Nike Dunk Lobster",
@@ -96,8 +96,8 @@
         "tags": [
             "Shoes"
         ],
-        "value": 270,
-        "cssBuyLink": "https://www.cssbuy.com/item-micro-6249681526.html?promotionCode=09ce95dd5c32435f"
+        "price": 270,
+        "link": "https://www.cssbuy.com/item-micro-6249681526.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "Kanye West Bear Backpack",
@@ -106,7 +106,7 @@
         "tags": [
             "Bags"
         ],
-        "value": 288,
-        "cssBuyLink": "https://cssbuy.com/item-703080388254.html&promotionCode=09ce95dd5c32435f"
+        "price": 288,
+        "link": "https://cssbuy.com/item-703080388254.html&promotionCode=09ce95dd5c32435f"
     }
 ]
