@@ -35,7 +35,7 @@ function createCards(data) {
                 </div>
             </div>
             <div class="card-footer">
-                <a href="${item.cssBuyLink}" class="btn btn-success" style="width: 100%;">Ir para CSSBuy</a>
+                <a href="${item.cssBuyLink}" class="btn btn-success" style="width: 100%;" target="_blank">Ir para CSSBuy</a>
             </div>`;
         cardsDiv.appendChild(card);
     });
@@ -43,10 +43,10 @@ function createCards(data) {
 
 
 function showHiddenPaginationButtons() {
-    const previousButton = document.getElementById("pg-previous-page");
+    const previousButton = document.getElementById("btn-previous-page");
     previousButton.classList.add("hidden");
 
-    const nextButton = document.getElementById("pg-next-page");
+    const nextButton = document.getElementById("btn-next-page");
     nextButton.classList.add("hidden");
 
     previousButton.removeEventListener("click", previousButtonClickHandler);
