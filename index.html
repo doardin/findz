@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/cards.css"">
 
     <title>Findz - Sua fonte de achados CSSBuy</title>
+    <link rel=" icon" type="image/x-icon" href="https://findz.s3.sa-east-1.amazonaws.com/imgs/favicon.svg">
     <style>
         body {
             font-family: 'Roboto'
@@ -19,40 +20,39 @@
 </head>
 
 <body>
-    <div class=" container">
-    <div class="header-text">
-        <h1>Findz</h1>
-        <h2>Sua fonte de achados CSSBuy</h2>
-    </div>
-    <div class="search-bar">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" id="search" placeholder="O que deseja encontrar?" aria-label=""
-                aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-success" type="button">Pesquisar</button>
+    <div class="container">
+        <div class="header-logo">
+            <img src="https://findz.s3.sa-east-1.amazonaws.com/imgs/logo.svg">
+        </div>
+        <div class="search-bar">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="search" placeholder="O que deseja encontrar?" aria-label=""
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success" type="button">Pesquisar</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="cards-container" class="cards-container">
-    </div>
+        <div id="cards-container" class="cards-container">
+        </div>
 
-    <div class="pagination-buttons">
-        <button id="btn-previous-page" style="transform: rotate(-180deg);justify-self: flex-start;">
-            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M8.38425 16.7944L9.29929 17.7094C9.68674 18.0969 10.3133 18.0969 10.6966 17.7094L18.7094 9.70071C19.0969 9.31326 19.0969 8.68674 18.7094 8.30341L10.6966 0.290589C10.3091 -0.0968628 9.68262 -0.0968628 9.29929 0.290589L8.38425 1.20563C7.99267 1.59721 8.00092 2.23609 8.40073 2.61942L13.3675 7.35127H1.52141C0.973208 7.35127 0.532173 7.79231 0.532173 8.34051V9.65949C0.532173 10.2077 0.973208 10.6487 1.52141 10.6487H13.3675L8.40073 15.3806C7.99679 15.7639 7.98855 16.4028 8.38425 16.7944Z"
-                    fill="green" />
-            </svg>
-        </button>
-        <button id="btn-next-page" style="justify-self: flex-end;">
-            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M8.38425 16.7944L9.29929 17.7094C9.68674 18.0969 10.3133 18.0969 10.6966 17.7094L18.7094 9.70071C19.0969 9.31326 19.0969 8.68674 18.7094 8.30341L10.6966 0.290589C10.3091 -0.0968628 9.68262 -0.0968628 9.29929 0.290589L8.38425 1.20563C7.99267 1.59721 8.00092 2.23609 8.40073 2.61942L13.3675 7.35127H1.52141C0.973208 7.35127 0.532173 7.79231 0.532173 8.34051V9.65949C0.532173 10.2077 0.973208 10.6487 1.52141 10.6487H13.3675L8.40073 15.3806C7.99679 15.7639 7.98855 16.4028 8.38425 16.7944Z"
-                    fill="green" />
-            </svg>
-        </button>
-    </div>
+        <div class="pagination-buttons">
+            <button id="btn-previous-page" style="transform: rotate(-180deg);justify-self: flex-start;">
+                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.38425 16.7944L9.29929 17.7094C9.68674 18.0969 10.3133 18.0969 10.6966 17.7094L18.7094 9.70071C19.0969 9.31326 19.0969 8.68674 18.7094 8.30341L10.6966 0.290589C10.3091 -0.0968628 9.68262 -0.0968628 9.29929 0.290589L8.38425 1.20563C7.99267 1.59721 8.00092 2.23609 8.40073 2.61942L13.3675 7.35127H1.52141C0.973208 7.35127 0.532173 7.79231 0.532173 8.34051V9.65949C0.532173 10.2077 0.973208 10.6487 1.52141 10.6487H13.3675L8.40073 15.3806C7.99679 15.7639 7.98855 16.4028 8.38425 16.7944Z"
+                        fill="green" />
+                </svg>
+            </button>
+            <button id="btn-next-page" style="justify-self: flex-end;">
+                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.38425 16.7944L9.29929 17.7094C9.68674 18.0969 10.3133 18.0969 10.6966 17.7094L18.7094 9.70071C19.0969 9.31326 19.0969 8.68674 18.7094 8.30341L10.6966 0.290589C10.3091 -0.0968628 9.68262 -0.0968628 9.29929 0.290589L8.38425 1.20563C7.99267 1.59721 8.00092 2.23609 8.40073 2.61942L13.3675 7.35127H1.52141C0.973208 7.35127 0.532173 7.79231 0.532173 8.34051V9.65949C0.532173 10.2077 0.973208 10.6487 1.52141 10.6487H13.3675L8.40073 15.3806C7.99679 15.7639 7.98855 16.4028 8.38425 16.7944Z"
+                        fill="green" />
+                </svg>
+            </button>
+        </div>
 
     </div>
     <!-- Optional JavaScript -->
@@ -70,6 +70,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="js/cards.js"></script>
-    </body>
+</body>
 
 </html>

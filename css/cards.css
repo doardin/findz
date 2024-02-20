@@ -25,6 +25,10 @@
     object-fit: contain;
 }
 
+.card-title {
+    font-size: 14px;
+}
+
 .page-link {
     font-weight: bold;
     color: green;
@@ -53,10 +57,13 @@
     display: none !important;
 }
 
-.header-text {
+.header-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 30px;
+}
+
+.header-logo img {
+    height: 250px;
+    width: 250px;
 }
