@@ -70,6 +70,7 @@ function previousButtonClickHandler() {
     const itemsToShow = items.slice(startIndex, endIndex);
     createCards(itemsToShow);
     showHiddenPaginationButtons();
+    window.scrollTo(0, 0);
 }
 
 function nextButtonClickHandler() {
@@ -79,6 +80,7 @@ function nextButtonClickHandler() {
     const itemsToShow = items.slice(startIndex, endIndex);
     createCards(itemsToShow);
     showHiddenPaginationButtons();
+    window.scrollTo(0, 0);
 }
 
 function search() {
