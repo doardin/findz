@@ -47,7 +47,7 @@
             "Shoes"
         ],
         "price": 199,
-        "link": "https://www.cssbuy.com/item-micro-6380800401.html?promotionCode=3d8de1188ad2926a"
+        "link": "https://www.cssbuy.com/item-micro-6380800401.html?promotionCode=09ce95dd5c32435f"
     },
     {
         "name": "(TOP/S2 Batch) Nike Dunk Low Heineken",
@@ -108,5 +108,65 @@
         ],
         "price": 288,
         "link": "https://cssbuy.com/item-703080388254.html&promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "The North Face Puffer 1996 Retro Nuptse",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/jackets/thenorthface_1996_puffer.png",
+        "description": "",
+        "tags": [
+            "Jackets"
+        ],
+        "price": 99,
+        "link": "https://www.cssbuy.com/item-micro-4440111263.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Trapstar Detachable Hood Puffer",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/jackets/trapstar_detachable_hood_puffer.png",
+        "description": "",
+        "tags": [
+            "Jackets"
+        ],
+        "price": 419,
+        "link": "https://www.cssbuy.com/item-micro-6517857075.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Shorts Essentials (Fear of God)",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shorts/fog_shorts.png",
+        "description": "",
+        "tags": [
+            "Shorts"
+        ],
+        "price": 25,
+        "link": "https://www.cssbuy.com/item-1688-645875073818.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Shorts Stussy (Várias CWs)",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shorts/stussy_shorts.png",
+        "description": "",
+        "tags": [
+            "Shorts"
+        ],
+        "price": 26,
+        "link": "https://www.cssbuy.com/item-1688-672819449353.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Pandora Colar",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/necklaces/pandora_necklace.png",
+        "description": "",
+        "tags": [
+            "Necklaces"
+        ],
+        "price": 88,
+        "link": "https://www.cssbuy.com/item-micro-4407778018.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Jaqueta Racer F1 Ferrari",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/jackets/ferrari_jacket.png",
+        "description": "",
+        "tags": [
+            "Jackets"
+        ],
+        "price": 140.63,
+        "link": "https://www.cssbuy.com/item-1688-748865476041.html?promotionCode=09ce95dd5c32435f"
     }
 ]
