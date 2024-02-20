@@ -28,14 +28,14 @@ function createCards(data) {
             <div class="card-body">
                 <div>
                     <h5 class="card-title" style="font-weight: bold; margin: 0;">${item.name}</h5>
-                    <h6 class="card-text" style="font-weight: bold; margin: 0;color: green;">¥${item.price}</h6>
+                    <h6 class="card-text  price" style="font-weight: bold; margin: 0;">¥${item.price}</h6>
                 </div>
                 <div class="card-tags">
                     ${tagsHTML}
                 </div>
             </div>
             <div class="card-footer">
-                <a href="${item.link}" class="btn btn-success" style="width: 100%;" target="_blank">Ir para CSSBuy</a>
+                <a href="${item.link}" class="btn green-button" style="width: 100%;" target="_blank">Ir para CSSBuy</a>
             </div>`;
         cardsDiv.appendChild(card);
     });

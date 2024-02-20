@@ -5,6 +5,21 @@
     margin-top: 50px;
 }
 
+.green-button {
+    color: #fff;
+    background-color: #6CBC2A;
+    border-color: #6CBC2A;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #6CBC2A;
+}
+
+.price {
+    color: #6CBC2A;
+}
+
 @media screen and (min-width: 905px) {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
@@ -31,7 +46,7 @@
 
 .page-link {
     font-weight: bold;
-    color: green;
+    color: #6CBC2A;
 }
 
 .pagination-buttons {
