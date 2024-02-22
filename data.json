@@ -150,7 +150,7 @@
         "link": "https://www.cssbuy.com/item-1688-672819449353.html?promotionCode=09ce95dd5c32435f"
     },
     {
-        "name": "Pandora Colar",
+        "name": "Colar Pandora",
         "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/necklaces/pandora_necklace.png",
         "description": "",
         "tags": [
@@ -168,5 +168,55 @@
         ],
         "price": 140.63,
         "link": "https://www.cssbuy.com/item-1688-748865476041.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Nike Hoodie Mini Swoosh (Várias CWs)",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/hoodies/nike_hoodie_mini_swoosh.png",
+        "description": "",
+        "tags": [
+            "Hoodies"
+        ],
+        "price": 78,
+        "link": "https://www.cssbuy.com/item-micro-4454944752.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Jaqueta Palace Racing GTX3",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/jackets/palace_jacket_racing_gtx3.jpg",
+        "description": "",
+        "tags": [
+            "Jackets"
+        ],
+        "price": 78,
+        "link": "https://www.cssbuy.com/item-629583217356.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Shorts Polo Ralph Lauren (Várias CWs)",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/shorts/polo_ralph_lauren_shorts.png",
+        "description": "",
+        "tags": [
+            "Shorts"
+        ],
+        "price": 68,
+        "link": "https://www.cssbuy.com/item-615350113100.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Anel Pandora",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/rings/pandora_ring_heart.jpg",
+        "description": "",
+        "tags": [
+            "Rings"
+        ],
+        "price": 10,
+        "link": "https://www.cssbuy.com/item-1688-739965589204.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Corteiz Tracksuit (Várias CWs)",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/tracksuits/corteiz_tracksuit.jpg",
+        "description": "",
+        "tags": [
+            "Tracksuits"
+        ],
+        "price": 42,
+        "link": "https://www.cssbuy.com/item-1688-725926310592.html?promotionCode=09ce95dd5c32435f"
     }
 ]
