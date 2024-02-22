@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/cards.css"">
+    <link rel="stylesheet" href="css/cards.css">
 
     <title>Findz - Sua fonte de achados CSSBuy</title>
     <link rel=" icon" type="image/x-icon" href="https://findz.s3.sa-east-1.amazonaws.com/imgs/favicon.svg">
@@ -26,11 +26,14 @@
         </div>
         <div class="search-bar">
             <div class="input-group mb-3">
+                <div class="input-group-append">
+                    <a href="#" class="btn btn-primary" role="button" aria-pressed="true">
+                        <i class="ph-bold ph-funnel" style="color: #fff;"></i>
+                    </a>
+                </div>
                 <input type="text" class="form-control" id="search" placeholder="O que deseja encontrar?" aria-label=""
                     aria-describedby="basic-addon2">
-                <div class="input-group-append">
                     <button class="btn" type="button">Pesquisar</button>
-                </div>
             </div>
         </div>
 
@@ -63,20 +66,20 @@
         <ul>
             <li>
                 <a href="https://www.youtube.com/playlist?list=PLZHhE9rDeyoCWK7DKkQUMrRHaccuc8GTu" target="_blank">
-                    <img src="./imgs/shipping.png" height="28px" width="28px">
+                    <i class="ph-bold ph-package" style="color: #6CBC2A;font-size: 24px;"></i>
                     Curso de Importação
                 </a>
             </li>
             <li>
                 <a href="https://cssbuy.com/fugazziculture" target="_blank">
-                    <img src="./imgs/signin.png" height="28px" width="28px">
+                    <i class="ph-bold ph-user-plus" style="color: #6CBC2A;font-size: 24px;"></i>
                     Cadastre-se no CSSBuy
                 </a>
             </li>
             <li>
 
                 <a href="https://discord.gg/fugazziculture" target="_blank">
-                    <img src="./imgs/discord-icon.svg" height="28px" width="28px">
+                    <i class="ph-bold ph-discord-logo" style="color: #6CBC2A;font-size: 24px;"></i>
                     Discord
                 </a>
             </li>
@@ -97,6 +100,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="js/cards.js"></script>
+
+    <footer class="text-center text-lg-start text-white">
+        <div class="text-center p-3" style="background-color: #f3f4f9;color: #6CBC2A;">
+            © 2024 Copyright: Eduardo Lopes
+        </div>
+    </footer>
 </body>
 
 </html>
