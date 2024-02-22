@@ -97,6 +97,11 @@ function search() {
     showHiddenPaginationButtons();
 }
 
+function fabIconToggle(){
+    var action = document.querySelector('.action');
+    action.classList.toggle('active');
+}
+
 fetchData('https://findz.s3.sa-east-1.amazonaws.com/data.json')
     .then(data => {
         items = data;
