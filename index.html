@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cards.css">
@@ -19,46 +19,47 @@
     </style>
 </head>
 
-<body>
-    <div class="container">
+<body style="display: flex;flex-direction: column;min-height: 100dvh;">
+    <div class="container" style="display: flex;width: 100%;flex-direction: column;flex: 1;">
         <div class="header-logo">
             <img src="https://findz.s3.sa-east-1.amazonaws.com/imgs/logo.svg">
         </div>
-        <div class="search-bar">
-            <div class="input-group mb-3">
-                <div class="input-group-append">
-                    <a href="#" class="btn btn-primary" role="button" aria-pressed="true">
-                        <i class="ph-bold ph-funnel" style="color: #fff;"></i>
-                    </a>
-                </div>
-                <input type="text" class="form-control" id="search" placeholder="O que deseja encontrar?" aria-label=""
-                    aria-describedby="basic-addon2">
+        <div style="display: flex;flex-direction: column;gap: 32px;margin-bottom: 32px;flex: 1;">
+
+            <div class="search-bar">
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <a href="#" class="btn btn-primary" role="button" aria-pressed="true">
+                            <i class="ph-bold ph-funnel" style="color: #fff;"></i>
+                        </a>
+                    </div>
+                    <input type="text" class="form-control" id="search" placeholder="O que deseja encontrar?"
+                        aria-label="" aria-describedby="basic-addon2">
                     <button class="btn" type="button">Pesquisar</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; flex: 1;">
+                <div id="cards-container" class="cards-container">
+                </div>
+            </div>
+            <div class="pagination-buttons">
+                <button id="btn-previous-page" style="transform: rotate(-180deg);justify-self: flex-start;" class="">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.85208 16.7944L8.76712 17.7094C9.15457 18.0969 9.78113 18.0969 10.1644 17.7094L18.1772 9.70071C18.5647 9.31326 18.5647 8.68674 18.1772 8.30341L10.1644 0.290589C9.77693 -0.0968629 9.15045 -0.0968629 8.76712 0.290589L7.85208 1.20563C7.4605 1.59721 7.46875 2.23609 7.86856 2.61942L12.8353 7.35127H0.989237C0.441035 7.35127 0 7.79231 0 8.34051V9.65949C0 10.2077 0.441035 10.6487 0.989237 10.6487H12.8353L7.86856 15.3806C7.46462 15.7639 7.45638 16.4028 7.85208 16.7944Z"
+                            fill="#6CBC2A"></path>
+                    </svg>
+
+                </button>
+                <button id="btn-next-page" style="justify-self: flex-end;" class="">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.85208 16.7944L8.76712 17.7094C9.15457 18.0969 9.78113 18.0969 10.1644 17.7094L18.1772 9.70071C18.5647 9.31326 18.5647 8.68674 18.1772 8.30341L10.1644 0.290589C9.77693 -0.0968629 9.15045 -0.0968629 8.76712 0.290589L7.85208 1.20563C7.4605 1.59721 7.46875 2.23609 7.86856 2.61942L12.8353 7.35127H0.989237C0.441035 7.35127 0 7.79231 0 8.34051V9.65949C0 10.2077 0.441035 10.6487 0.989237 10.6487H12.8353L7.86856 15.3806C7.46462 15.7639 7.45638 16.4028 7.85208 16.7944Z"
+                            fill="#6CBC2A"></path>
+                    </svg>
+                </button>
             </div>
         </div>
-
-        <div id="cards-container" class="cards-container">
-        </div>
-
-        <div class="pagination-buttons">
-            <button id="btn-previous-page" style="transform: rotate(-180deg);justify-self: flex-start;">
-                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M7.85208 16.7944L8.76712 17.7094C9.15457 18.0969 9.78113 18.0969 10.1644 17.7094L18.1772 9.70071C18.5647 9.31326 18.5647 8.68674 18.1772 8.30341L10.1644 0.290589C9.77693 -0.0968629 9.15045 -0.0968629 8.76712 0.290589L7.85208 1.20563C7.4605 1.59721 7.46875 2.23609 7.86856 2.61942L12.8353 7.35127H0.989237C0.441035 7.35127 0 7.79231 0 8.34051V9.65949C0 10.2077 0.441035 10.6487 0.989237 10.6487H12.8353L7.86856 15.3806C7.46462 15.7639 7.45638 16.4028 7.85208 16.7944Z"
-                        fill="#6CBC2A" />
-                </svg>
-
-            </button>
-            <button id="btn-next-page" style="justify-self: flex-end;">
-                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M7.85208 16.7944L8.76712 17.7094C9.15457 18.0969 9.78113 18.0969 10.1644 17.7094L18.1772 9.70071C18.5647 9.31326 18.5647 8.68674 18.1772 8.30341L10.1644 0.290589C9.77693 -0.0968629 9.15045 -0.0968629 8.76712 0.290589L7.85208 1.20563C7.4605 1.59721 7.46875 2.23609 7.86856 2.61942L12.8353 7.35127H0.989237C0.441035 7.35127 0 7.79231 0 8.34051V9.65949C0 10.2077 0.441035 10.6487 0.989237 10.6487H12.8353L7.86856 15.3806C7.46462 15.7639 7.45638 16.4028 7.85208 16.7944Z"
-                        fill="#6CBC2A" />
-                </svg>
-
-            </button>
-        </div>
-
     </div>
 
     <div class="action" onclick="fabIconToggle()">

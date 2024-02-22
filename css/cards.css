@@ -181,12 +181,12 @@
     transition: 0.3s
 }
 
-.action ul li a{
+.action ul li a {
     justify-content: flex-start;
     display: flex;
 }
 
-.action ul li a i{
+.action ul li a i {
     padding-right: 8px;
 }
 
@@ -203,11 +203,11 @@
     opacity: 0.5;
 }
 
-.action ul li:not(:last-child){
+.action ul li:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.action ul li img{
+.action ul li img {
     margin-right: 10px;
     transform: scale(0.8);
 }
