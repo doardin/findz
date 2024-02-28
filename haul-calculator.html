@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de Haul">
+
+
+
+    <title>Calculadora de Haul - Findz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cards.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            font-family: 'Roboto'
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100dvh;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-md-6">
+            <div>
+                <h2 class="text-center">Calculadora Haul</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="preco">Preço</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">¥</span>
+                            </div>
+                            <input type="number" min="0.01" class="form-control"
+                                aria-label="Amount (to the nearest dollar)"
+                                placeholder="Valor total da compra em yuans">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">yuans</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preco">Frete Local</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">yuans</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preco">Cupom de Compra</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">yuans</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preco">Peso do Produto</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <div class="input-group-append">
+                                <span class="input-group-text">gramas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Serviços de Compra</h3>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <div>
+                                <input type="checkbox" class="form-check-input" id="tirar_fotos"
+                                    name="servicos_compra[]" value="tirar_fotos">
+                                <label class="form-check-label" for="tirar_fotos">Tirar Fotos</label>
+                                <span>2¥</span>
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="tirar_fotos" name="servicos_compra[]"
+                                value="tirar_fotos">
+                            <label class="form-check-label" for="tirar_fotos">Medir Tamanho</label>
+                            <span>4¥</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="tirar_fotos" name="servicos_compra[]"
+                                value="tirar_fotos">
+                            <label class="form-check-label" for="tirar_fotos">Coluna de Ar</label>
+                            <span>5¥</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="tirar_fotos" name="servicos_compra[]"
+                                value="tirar_fotos">
+                            <label class="form-check-label" for="tirar_fotos">Caixa de Proteção</label>
+                            <span>5¥</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="tirar_fotos" name="servicos_compra[]"
+                                value="tirar_fotos">
+                            <label class="form-check-label" for="tirar_fotos">Compra Prioritária</label>
+                            <span>4¥</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="tirar_fotos" name="servicos_compra[]"
+                                value="tirar_fotos">
+                            <label class="form-check-label" for="tirar_fotos">Shoes Tree</label>
+                            <span>5¥</span>
+                        </div>
+                    </div>
+
+                    <h3>Serviços de Envio</h3>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="embalagem_vacuo" name="servicos_envio[]"
+                                value="embalagem_vacuo">
+                            <label class="form-check-label" for="embalagem_vacuo">Embalagem a Vácuo</label>
+                            <span>10¥</span>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="embalagem_vacuo" name="servicos_envio[]"
+                                value="embalagem_vacuo">
+                            <label class="form-check-label" for="embalagem_vacuo">Plástico Bolha</label>
+                            <span>4¥</span>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="embalagem_vacuo" name="servicos_envio[]"
+                                value="embalagem_vacuo">
+                            <label class="form-check-label" for="embalagem_vacuo">Seguro</label>
+                            <span>3% do valor dos produtos</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="embalagem_vacuo" name="servicos_envio[]"
+                                value="embalagem_vacuo">
+                            <label class="form-check-label" for="embalagem_vacuo">Colar invoice</label>
+                            <span>1¥</span>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="embalagem_vacuo" name="servicos_envio[]"
+                                value="embalagem_vacuo">
+                            <label class="form-check-label" for="embalagem_vacuo">Colar mensagem</label>
+                            <span>1¥</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo_frete_internacional">Tipo de Frete Internacional:</label>
+                        <select class="form-control" id="tipo_frete_internacional" name="tipo_frete_internacional">
+                            <option value="frete_aereo">HZ-CNLine</option>
+                            <option value="frete_aereo">FJ-BR</option>
+                            <option value="frete_aereo">POST SAL</option>
+                            <option value="frete_aereo">SX-EUB</option>
+                            <option value="frete_aereo">YR-GZ-CNLine</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preco">Cupom de Envio</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">¥</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
