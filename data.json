@@ -218,5 +218,25 @@
         ],
         "price": 42,
         "link": "https://www.cssbuy.com/item-1688-725926310592.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Camiseta Stussy Dragon (Várias CWs)",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/tshirts/stussy_dragon_tshirt.webp",
+        "description": "",
+        "tags": [
+            "T-Shirts"
+        ],
+        "price": 76,
+        "link": "https://www.cssbuy.com/item-693599451831.html?promotionCode=09ce95dd5c32435f"
+    },
+    {
+        "name": "Boné Stussy (Várias CWs)",
+        "image": "https://findz.s3.sa-east-1.amazonaws.com/imgs/hats/stussy_hat.jpeg",
+        "description": "",
+        "tags": [
+            "Hats"
+        ],
+        "price": 18,
+        "link": "https://www.cssbuy.com/item-micro-2234722451.html?promotionCode=09ce95dd5c32435f"
     }
 ]
